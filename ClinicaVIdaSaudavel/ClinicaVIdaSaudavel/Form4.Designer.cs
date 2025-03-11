@@ -36,9 +36,9 @@
             // 
             // btnCadastro
             // 
-            btnCadastro.Location = new Point(307, 466);
+            btnCadastro.Location = new Point(251, 247);
             btnCadastro.Name = "btnCadastro";
-            btnCadastro.Size = new Size(92, 69);
+            btnCadastro.Size = new Size(181, 83);
             btnCadastro.TabIndex = 2;
             btnCadastro.Text = "Cadastro";
             btnCadastro.UseVisualStyleBackColor = true;
@@ -46,9 +46,9 @@
             // 
             // btnSair
             // 
-            btnSair.Location = new Point(38, 462);
+            btnSair.Location = new Point(3, 247);
             btnSair.Name = "btnSair";
-            btnSair.Size = new Size(107, 75);
+            btnSair.Size = new Size(183, 75);
             btnSair.TabIndex = 3;
             btnSair.Text = "Sair";
             btnSair.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // 
             // btnRelatorio
             // 
-            btnRelatorio.Location = new Point(38, 160);
+            btnRelatorio.Location = new Point(303, 47);
             btnRelatorio.Name = "btnRelatorio";
             btnRelatorio.Size = new Size(116, 24);
             btnRelatorio.TabIndex = 4;
@@ -66,25 +66,27 @@
             // 
             // btnAgendamentoadm
             // 
-            btnAgendamentoadm.Location = new Point(38, 190);
+            btnAgendamentoadm.Location = new Point(30, 46);
             btnAgendamentoadm.Name = "btnAgendamentoadm";
             btnAgendamentoadm.Size = new Size(116, 25);
             btnAgendamentoadm.TabIndex = 5;
             btnAgendamentoadm.Text = "Agendamentos";
             btnAgendamentoadm.UseVisualStyleBackColor = true;
+            btnAgendamentoadm.Click += btnAgendamentoadm_Click;
             // 
             // FormAdministrador
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(106, 199, 188);
-            ClientSize = new Size(451, 604);
+            ClientSize = new Size(431, 321);
             Controls.Add(btnAgendamentoadm);
             Controls.Add(btnRelatorio);
             Controls.Add(btnSair);
             Controls.Add(btnCadastro);
             Name = "FormAdministrador";
             Text = "FormAdministrador";
+            Load += FormAdministrador_Load;
             ResumeLayout(false);
         }
 

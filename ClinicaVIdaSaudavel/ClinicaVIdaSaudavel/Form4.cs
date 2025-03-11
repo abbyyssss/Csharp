@@ -33,5 +33,15 @@ namespace ClinicaVIdaSaudavel
         {
             new RelatorioForm().Show();
         }
+
+        private void btnAgendamentoadm_Click(object sender, EventArgs e)
+        {
+            new formAgendamento().Show();
+        }
+
+        private void FormAdministrador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

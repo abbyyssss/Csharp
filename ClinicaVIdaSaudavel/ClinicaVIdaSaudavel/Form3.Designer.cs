@@ -28,32 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            dataGridViewConsultasMedico = new DataGridView();
+            btnCancelarConsulta = new Button();
+            btnsairlogin = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewConsultasMedico).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // dataGridViewConsultasMedico
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(286, 81);
-            label1.Name = "label1";
-            label1.Size = new Size(43, 15);
-            label1.TabIndex = 0;
-            label1.Text = "medici";
+            dataGridViewConsultasMedico.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewConsultasMedico.Location = new Point(1, 3);
+            dataGridViewConsultasMedico.Name = "dataGridViewConsultasMedico";
+            dataGridViewConsultasMedico.RowTemplate.Height = 25;
+            dataGridViewConsultasMedico.Size = new Size(351, 189);
+            dataGridViewConsultasMedico.TabIndex = 0;
+            // 
+            // btnCancelarConsulta
+            // 
+            btnCancelarConsulta.Location = new Point(100, 230);
+            btnCancelarConsulta.Name = "btnCancelarConsulta";
+            btnCancelarConsulta.Size = new Size(156, 41);
+            btnCancelarConsulta.TabIndex = 1;
+            btnCancelarConsulta.Text = "button1";
+            btnCancelarConsulta.UseVisualStyleBackColor = true;
+            btnCancelarConsulta.Click += btnCancelarConsulta_Click_1;
+            // 
+            // btnsairlogin
+            // 
+            btnsairlogin.BackColor = Color.Transparent;
+            btnsairlogin.FlatAppearance.BorderSize = 2;
+            btnsairlogin.FlatAppearance.MouseDownBackColor = Color.Gray;
+            btnsairlogin.FlatAppearance.MouseOverBackColor = Color.Cyan;
+            btnsairlogin.FlatStyle = FlatStyle.Flat;
+            btnsairlogin.ForeColor = Color.Black;
+            btnsairlogin.Image = Properties.Resources.icons8_saída_de_emergência_80;
+            btnsairlogin.Location = new Point(146, 333);
+            btnsairlogin.Name = "btnsairlogin";
+            btnsairlogin.Size = new Size(68, 86);
+            btnsairlogin.TabIndex = 10;
+            btnsairlogin.UseVisualStyleBackColor = false;
             // 
             // FormMedico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            BackColor = Color.FromArgb(106, 199, 188);
+            ClientSize = new Size(352, 450);
+            Controls.Add(btnsairlogin);
+            Controls.Add(btnCancelarConsulta);
+            Controls.Add(dataGridViewConsultasMedico);
             Name = "FormMedico";
             Text = "FormMedico";
+            Load += FormMedico_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewConsultasMedico).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
+        private DataGridView dataGridViewConsultasMedico;
+        private Button btnCancelarConsulta;
+        private Button btnsairlogin;
     }
 }
